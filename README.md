@@ -91,7 +91,7 @@ in that it's isolated from the build process itself and only relies on the build
 platform's integrity. This central monitor service can then be locked down and
 use keys that aren't exposed to the build to attest to the provenance contents.
 
-![CI Monitor Architecture](./docs/images/monitor.png =887x332)
+<img href="./docs/images/monitor.png" alt="CI Monitor Architecture" width="887" height="332" />
 
 This prototype limits support to GitHub Actions workflows and publishes
 provenance based on the data available.
@@ -113,7 +113,7 @@ The Rebuilder architecture ingests existing artifacts, infers their likely build
 process, attempts to rebuild a logically equivalent version, and, if successful,
 writes provenance based on this process.
 
-![Rebuilder Architecture](./docs/images/rebuilder.png =887x332)
+<img href="./docs/images/rebuilder.png" alt="Rebuilder Architecture" width="887" height="332" />
 
 This prototype limits support to Python wheels and publishes the provenance if
 the reconstructed wheel matches the one published on the public package index.
@@ -138,7 +138,7 @@ from unrelated aspects of the environment. Provenance upload is most effective
 as a means of quickly onboarding build workflows that are opaque or would
 otherwise require substantial work to generate signed provenance.
 
-![Provenance Upload Architecture](./docs/images/provenance_upload.png =887x332)
+<img href="./docs/images/provenance_upload.png" alt="Provenance Upload Architecture" width="887" height="332" />
 
 This prototype enforces authorization based on the identity authenticating to
 the Cloud Run deployment. By default, this must be done using GCP IAM but it may
