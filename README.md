@@ -7,8 +7,8 @@ A demonstration of [SLSA](https://slsa.dev) provenance generation strategies
 that don't require full build system integration.
 
 Software engineering isn't *one size fits all* and our approach to supply chain
-security shouldn't be so either. The construction presented here offers a number
-of benefits:
+security shouldn't be so either. While certainly not exhaustive, the
+architectures presented here offer a number of benefits:
 
 *   Flexible deployment options
 *   Easy on-boarding
